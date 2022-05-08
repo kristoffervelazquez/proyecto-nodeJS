@@ -3,4 +3,28 @@ extends ./layout/index
 block contenido
     main.container.mt-5
         .row
-            h1 #{pagina}
+            .col-md-5
+                img(src="img/nosotros.jpg", alt="imagen sobre nosotros", class="img-fluid")
+            .col-md-7
+                h1 #{pagina}
+                blockquote Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a dui eu dui fermentum rhoncus non id lorem. Duis aliquet suscipit nisl, vel tempus libero rhoncus ut. Maecenas sollicitudin dolor ut sapien varius, mattis blandit ligula cursus. Duis finibus porta ligula, ut vulputate felis cursus non. Quisque iaculis, magna mollis ultrices consequat, nisi mi molestie nisl, ut scelerisque tortor lacus sed tortor. Integer imperdiet mauris vel magna tempus pulvinar. Nulla facilisi. Integer egestas dui vitae elit iaculis placerat ut in purus. .  
+
+                p Vestibulum auctor egestas urna sed varius. Nunc fringilla mauris nec molestie ornare. Mauris auctor molestie nibh, vel gravida ipsum sodales vel. Integer at turpis dui. Pellentesque eleifend tellus metus. Ut sed eros vitae mauris blandit scelerisque id nec lectus. Quisque ultrices tincidunt massa non elementum.  
+
+                p Sed blandit, orci ac vehicula sagittis, nulla lacus ultricies elit, in interdum sem diam at nibh. Nullam consectetur ex eu odio auctor, nec malesuada eros luctus. Nunc a tellus laoreet, consequat orci et, efficitur justo. Curabitur quis nisl ac ex aliquet accumsan. Suspendisse arcu quam, rutrum non eros nec, luctus efficitur tortor.
+
+    .listado-iconos
+        .container.mt-5.py-5.text-center
+            .row
+                .col-md-4
+                    img(src="img/icono_seguridad.svg", alt="icono seguirdad" class="img-fluid mb-4")
+                    h2.mb-4 Seguridad
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dignissimos molestias repellat corporis animi blanditiis.
+                .col-md-4
+                    img(src="img/icono_destinos.svg", alt="icono seguirdad" class="img-fluid mb-4")
+                    h2.mb-4 Mejores destinos
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dignissimos molestias repellat corporis animi blanditiis.
+                .col-md-4
+                    img(src="img/icono_precios.svg", alt="icono seguirdad" class="img-fluid mb-4")
+                    h2.mb-4 Los Mejores precios
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dignissimos molestias repellat corporis animi blanditiis.
