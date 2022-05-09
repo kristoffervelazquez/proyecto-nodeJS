@@ -4,16 +4,27 @@ const guardarTestimonial = (req, res) => {
     const errores = [];
 
     if (nombre.trim() === '') {
-        errores.push({ mensaje: 'El nombre esta vacio' })
+        errores.push({ mensaje: 'El nombre está vacío' })
     }
     if (correo.trim() === '') {
-        errores.push({ mensaje: 'El correo esta vacio' })
+        errores.push({ mensaje: 'El correo está vacío' })
     }
     if (mensaje.trim() === '') {
-        errores.push({ mensaje: 'El mensaje esta vacio' })
+        errores.push({ mensaje: 'El mensaje está vacío' })
     }
 
-    console.log(errores)
+    if(errores.length > 0) {
+        // Mostrar la vista con errores
+        res.render('testimoniales', {
+            pagina: 'testimoniales',
+            errores,
+            nombre, 
+            correo, 
+            mensaje
+        })
+    }else{
+        // Almacenarlo en la base de datos
+    }
 }
 
 
