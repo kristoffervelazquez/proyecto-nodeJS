@@ -1,6 +1,29 @@
 extends ./layout/index
 
+block slider
+    .slider
+        h1 Rio de Janeiro
+        em aventura
+
 block contenido
     main.container.mt-5
-        .row
-            h1 #{pagina}
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestias perspiciatis, ex, dolorem explicabo id maxime quisquam cupiditate reiciendis hic blanditiis quibusdam accusantium repellat eligendi rem soluta facilis! Officiis, laudantium?
+                p Optio ut expedita, perspiciatis iure, facere dolorem in facilis eius consequuntur quam nisi minus sit placeat odit recusandae dignissimos qui totam deleniti!
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="Imagen nosotros" class="img-fluid")
+        include ./layout/bloque_viajes
+    .descuento
+        .container
+            .row
+                .col-md-6
+                    .contenido
+                        h3 5% de Descuento
+                        p.titulo Viaja a Canada
+                        p.fecha 20 de Junio 2022 - 28 de Junio 2022
+                        p.precio $2500 Dolares
+    .container
+        h2.mt-5.text-center Testimoniales
+        include ./layout/bloque_testimoniales
