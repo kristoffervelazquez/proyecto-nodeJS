@@ -23,7 +23,10 @@ app.use( (req, res, next) =>{
     res.locals.nombreSitio = 'Agencia de viajes'; 
     
     next();
-})
+});
+
+// Agregar body parser para leer los datos del formulario
+app.use(express.urlencoded({extended: true}))
 
 
 // Agregar router

@@ -36,7 +36,7 @@ const paginaDetalleViaje = async (req, res) => {
 
     try {
         const resultado = await Viaje.findOne({
-            where: { slug: slug }
+            where: { slug}
         });
 
         res.render('viaje', {
