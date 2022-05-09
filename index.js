@@ -11,8 +11,7 @@ db.authenticate()
 
 
 
-// Definir puerto
-const port = process.env.PORT || 3000;
+
 
 // Obtener el año actual
 app.use( (req, res, next) =>{
@@ -41,8 +40,11 @@ app.set('view engine', 'pug');
 app.use(express.static('public'));
 
 
+// PUERTO Y HOST PARA LA APP
+const host = process.env.HOST || '0.0.0.0'
 
+const port = process.env.PORT || 3000;
 
-app.listen(port, () => {
-    console.log(`El servidor está funcionando en el puerto ${port} http://localhost:3000/`);
+app.listen(port, host, () => {
+    console.log(`El servidor está funcionando en el puerto ${port}`);
 })
